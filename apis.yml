@@ -1,8 +1,19 @@
 aid: elisity
 name: Elisity
-description: 'Elisity is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Elisity is a San Jose-based cybersecurity company (founded 2019, backed by Insight
+  Partners) that builds an AI-powered, identity-based microsegmentation platform for
+  Zero Trust security. Elisity discovers, classifies, and continuously monitors every
+  user, workload, and device, then enforces dynamic least-privilege policies to stop
+  lateral movement, without agents, new hardware, or network changes, by leveraging the
+  Cisco, Arista, and Juniper switches organizations already own. The platform centers on
+  Elisity IdentityGraph (real-time asset visibility enriched from sources like Active
+  Directory, CrowdStrike, and Armis), a Dynamic Policy Engine, lightweight Virtual Edge
+  container software that syncs policy to existing infrastructure, and the Cloud Control
+  Center admin portal. Its product API and Open Connector integration API are documented
+  inside the authenticated Cloud Control Center rather than a public developer portal.
+  Elisity is used by Fortune 500 healthcare systems, manufacturers, and pharmaceutical
+  firms for IoMT, OT/ICS, and enterprise segmentation.
 url: https://raw.githubusercontent.com/api-evangelist/elisity/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +21,30 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.elisity.com/hubfs/elisity-logo-square-2024-glyph-1.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Cybersecurity
+- Microsegmentation
+- Zero Trust
+- Network Security
+- Identity
+- OT Security
+- Healthcare Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/elisity-domain-security.yml
+- type: Conformance
+  url: conformance/elisity-conformance.yml
+- type: Compliance
+  url: https://www.elisity.com/company#soc-2-compliance
 - type: Website
   url: https://www.elisity.com/
+- type: Documentation
+  url: https://support.elisity.com/hc/en-us
+- type: Support
+  url: https://support.elisity.com/hc/en-us
+- type: Blog
+  url: https://www.elisity.com/blog
+- type: TermsOfService
+  url: https://www.elisity.com/customer-terms-of-service
+- type: PrivacyPolicy
+  url: https://www.elisity.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

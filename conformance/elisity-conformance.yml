@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.elisity.com/company#soc-2-compliance
+summary: >-
+  Elisity is an identity-based microsegmentation vendor whose platform (Cloud
+  Control Center + Virtual Edge) is delivered as a SaaS control plane. The only
+  publicly documented compliance posture is a completed SOC 2 examination
+  published on the company page. No public OpenAPI is available (the product
+  API lives inside the authenticated Cloud Control Center), so protocol-level
+  standards below are asserted from public documentation, not derived from a
+  spec.
+standards:
+  - id: soc2
+    conforms: true
+    evidence: >-
+      Company page states "Elisity completed its SOC 2 (System and Organization
+      Control 2) examination by the American Institute of Certified Public
+      Accountants (AICPA)."
+    source: https://www.elisity.com/company#soc-2-compliance
+  - id: iso-27001
+    conforms: false
+    evidence: Not published on the company or any public compliance page.
+  - id: oauth2
+    conforms: false
+    evidence: No public OpenAPI or auth documentation; product API is behind login.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No public API spec to evaluate error format.
